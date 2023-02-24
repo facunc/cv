@@ -61,23 +61,6 @@ body{
     padding: 0;
 }
 
-/*button{
-   font-size:medium;
-    width: 150px;
-    height: 35px;  
-    border: none;
-    margin-top: 10px;
-    float: right;
-    transition: 0.5s;
-    background-color: white;
-}
-
-button:hover{
-    color:white;
-    background-color: #667793;
-    cursor: pointer;
-}
-*/
 .container-perfil, .container-experiencia, .container-habilidades{
     height:630px;
     border-radius: 50px;
@@ -88,6 +71,8 @@ button:hover{
 }
 
 .container-contacto{
+    border-top: 1px solid gray;
+    border-bottom: 1px;
     text-align: center;
     height: 500px;
     margin: 30px;
@@ -131,12 +116,20 @@ button:hover{
     background-color: white;
 }
 
+.datos{
+    position: relative;
+}
+
 #cuadro-texto-datos{
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     border-radius: 25px;
-    height: 300px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 80px;
     background-color:#c9ccdd;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -168,6 +161,22 @@ button:hover{
     text-align: center;
 }
 
+.vinculos-redes-sociales{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
+    border-radius: 5px;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.vinculos-redes-sociales:hover{
+    background-color: grey;
+    transform: scale(1.5);
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
 
 .container-experiencia, .container-habilidades, .experiencia-datos, .habilidades-datos, .experiencia-icono, .habilidades-icono{
     border-radius: 0;
@@ -240,6 +249,7 @@ a{
     padding-top: 7px;
     background-color: white;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 a:hover{
@@ -249,12 +259,18 @@ a:hover{
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 #experiencia, #habilidades, #contacto{
     scroll-margin-top: 50px;
 }
- 
-  
+
+#enviar{
+    border: 1px solid gray;
+}
+
+#enviar:hover{
+    cursor: pointer;
+}  
   
