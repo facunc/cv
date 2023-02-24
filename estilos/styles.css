@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+body{
+    background-color:white;
+    margin:0;
+}
+
+.header{
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color:white;
+}
+
+.header-webpage{
+    color: black;
+    margin-left:auto;
+    margin-top: 10px;
+    padding-top: 0;
+    text-align: left;
+}
+
+#header-webpage-texto{
+    margin: 0;
+}
+
+.header-botones{
+    height: 100%;
+    text-align:right;
+    padding: 0;
+}
+
+/*button{
+   font-size:medium;
+    width: 150px;
+    height: 35px;  
+    border: none;
+    margin-top: 10px;
+    float: right;
+    transition: 0.5s;
+    background-color: white;
+}
+
+button:hover{
+    color:white;
+    background-color: #667793;
+    cursor: pointer;
+}
+*/
+.container-perfil, .container-experiencia, .container-habilidades{
+    height:630px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-contacto{
+    text-align: center;
+    height: 500px;
+    margin: 30px;
+}
+
+.presentacion, .experiencia-icono, .habilidades-icono {
+    color: antiquewhite;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    background-color: #667793;
+
+}
+
+.experiencia-icono, .habilidades-icono{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.experiencia-icono{
+    background-image: url("/img/foto-experiencia.png") ;
+}
+
+.habilidades-icono{
+    background-image: url("/img/foto-habilidades.jpg");
+}
+
+#cuadro-presentacion-texto{
+    margin: auto;
+    width: 100%;
+}
+
+.datos, .experiencia-datos, .habilidades-datos{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+
+#cuadro-texto-datos{
+    border-radius: 25px;
+    height: 300px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 80px;
+    background-color:#c9ccdd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cuadro-texto-experiencia, #cuadro-texto-habilidades{
+    height: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#lista-datos{
+    color: antiquewhite;
+}
+
+#lista-experiencia, #lista-habilidades{
+    color: black;
+    margin-left:0;
+}
+
+#lista-redes-sociales{
+    list-style-type: none;
+    height: 100%;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+}
+
+
+.container-experiencia, .container-habilidades, .experiencia-datos, .habilidades-datos, .experiencia-icono, .habilidades-icono{
+    border-radius: 0;
+}
+
+.redes-sociales{
+    height: 100%;
+}
+
+ul{
+    display:inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 30px;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+.vinculo-redes-sociales{
+    height: fit-content;
+    margin: 10px;
+    padding:0;
+    color: grey;
+    box-shadow: 0px;
+    transition: 0.5s;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2{
+    display: inline;
+    margin-left: 30px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 15px;
+    background-color:gainsboro;
+    resize: none;
+}
+
+#mensaje{
+    height: 130px;
+}
+
+#enviar{
+    width: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+a{
+    display: inline-block;
+    font-size:medium;
+    width: 100px;
+    height:35px;  
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 7px;
+    background-color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    background-color: #667793;
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#experiencia, #habilidades, #contacto{
+    scroll-margin-top: 50px;
+}
+ 
+  
+  
