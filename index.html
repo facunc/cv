@@ -24,7 +24,7 @@
     <div class="container-perfil" id="perfil">
         <div class="col-5 presentacion">
             <h1>HOLA!</h1>
-            <img src="img/foto-perfil.jpg" alt="Foto Perfil">
+            <img id="foto" src="" alt="">
             <div id="cuadro-presentacion-texto">
                 <h3>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet error, mollitia libero corporis natus atque. Dicta accusamus esse fugit, pariatur impedit, aut sunt cum numquam inventore, et quibusdam? In, veritatis!
@@ -34,11 +34,10 @@
         <div class="col-7 datos">
             <div id="cuadro-texto-datos">
                 <ul id="lista-datos">
-                    <li>facundo</li>
-                    <li>nicolas</li>
-                    <li>contreras</li>
-                    <li>gasparini</li>
-                    <li>31939627</li>
+                    <li>Nombre: <span id="nombre"></span></li>
+                    <li>Origen: <span id="origen"></span></li>
+                    <li>Edad: <span id="edad"></span></li>
+                    <li>Residencia: <span id="residencia"></span></li>
                 </ul>
             </div>       
         </div>
@@ -84,11 +83,11 @@
     <div class="container-contacto" id="contacto">
         <div class="col-7 formulario">
             <h2>Contacto</h2>
-            <form action="">
-                <input type="text" name="nombre" id="nombre" placeholder="nombre" required><br>
-                <input type="tel" name="telefono" id="telefono" placeholder="telefono"><br> 
-                <input type="email" name="email" id="correo" placeholder="correo electronico" required><br>
-                <input type="text" name="mensaje" id="mensaje" placeholder="mensaje..." required>
+            <form action="" name="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                <input type="tel" name="telefono" id="telefono" placeholder="telefono"> 
+                <input type="email" name="email" id="correo" placeholder="correo electronico">
+                <input type="text" name="mensaje" id="mensaje" placeholder="mensaje...">
                 <input type="submit" name="enviar" id="enviar">
             </form>
         </div>
@@ -103,6 +102,7 @@
         
     </div>
 
-    <script src="js/cv.js"></script>
+    <script src="js/cv.js">
+    </script>
 </body>
 </html>
