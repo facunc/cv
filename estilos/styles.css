@@ -3,7 +3,8 @@
 }
 
 html {
-    font-family: "Lucida Sans", sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
   }
 
 .col-1 {width: 8.33%;}
@@ -52,7 +53,8 @@ body{
 }
 
 #header-webpage-texto{
-    margin: 0;
+    margin:auto;
+    padding-top:5px;
 }
 
 .header-botones{
@@ -79,13 +81,17 @@ body{
 }
 
 .presentacion, .experiencia-icono, .habilidades-icono {
-    color: antiquewhite;
+    color:snow;
     height: 100%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     text-align: center;
-    background-color: #667793;
+    background-color:#667793;
 
+}
+
+.presentacion h1{
+    font-size: 2em;
 }
 
 .experiencia-icono, .habilidades-icono{
@@ -103,8 +109,9 @@ body{
 }
 
 #cuadro-presentacion-texto{
+    text-align:justify;
     margin: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .datos, .experiencia-datos, .habilidades-datos{
@@ -118,6 +125,10 @@ body{
 
 .datos{
     position: relative;
+}
+
+.datos-personales{
+    font-weight: 400;
 }
 
 #cuadro-texto-datos{
@@ -135,7 +146,7 @@ body{
 }
 
 #cuadro-texto-experiencia, #cuadro-texto-habilidades{
-    height: 400px;
+    height: 80%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -144,13 +155,14 @@ body{
     border-bottom: 1px solid black;
 }
 
-#lista-datos{
-    color: antiquewhite;
-}
-
-#lista-experiencia, #lista-habilidades{
+#lista-experiencia, #lista-habilidades, #lista-datos{
     color: black;
     margin-left:0;
+}
+
+#lista-datos{
+    list-style-type: none;
+    padding-top: 40px;
 }
 
 #lista-redes-sociales{
@@ -216,6 +228,17 @@ img{
 h2{
     display: inline;
     margin-left: 30px;
+}
+
+h2, h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200; 
 }
 
 input{
