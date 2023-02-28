@@ -101,11 +101,11 @@ body{
 }
 
 .experiencia-icono{
-    background-image: url("/img/foto-experiencia.png") ;
+    background-image: url("../img/experiencia.png") ;
 }
 
 .habilidades-icono{
-    background-image: url("/img/foto-habilidades.jpg");
+    background-image: url("../img/habilidades.jpg");
 }
 
 #cuadro-presentacion-texto{
