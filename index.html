@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Facundo Contreras Gasparini</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/8df530b89a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto+Slab:wght@100;200;300;400&display=swap');
+      </style>
+</head>
+
+<!-- La idea inicial fue darle estructura de Grid View para luego trabajar con Media Queries y hacerlo full responsive. 
+    Arranqué al revés de lo recomendado, diseñando primero para desktop. No alcancé a finalizarlo-->
+
+<body id="body">
+    <div class="header">
+        <div class="col-6 header-webpage">
+            <h3 id="header-webpage-texto">Web CV</h3>
+        </div>
+        <div class="col-6 header-enlaces">
+            <div class="menu" style="float:right;">
+                <button class="menu-inicio">Inicio</button>
+                <div class="menu-lista">
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <div class="container-perfil" id="perfil">
+        <div class="col-5 presentacion">
+            <h1> <b>HOLA!</b> </h1>
+            <img id="foto" src="" alt="">
+            <div id="cuadro-presentacion-texto">
+                <p>
+                    <h3>
+                        Soy <span id="nombre"></span>, ingeniero electronico de profesion, programador por elección y apasiondo por los  sistemas embebidos
+                    </h3>
+                </p>
+                <p>
+                    <h3>
+                        Me gustan los desafios creativos del desarrollo web y aprender de nuevas tecnologias. <br> Estoy interesado en proyectos que me ayuden a generar experiencia como Desarrollador Front End
+                    </h3>
+                </p> 
+            </div>
+        </div>
+        <div class="col-7 datos">
+            <div id="cuadro-texto-datos">
+                <ul id="lista-datos">
+                    <li><span class="datos-personales">Nombre: </span><span id="nombre-completo"></span></li>
+                    <li><span class="datos-personales">Origen: </span><span id="origen"></span></li>
+                    <li><span class="datos-personales">Edad: </span><span id="edad"></span></li>
+                    <li><span class="datos-personales">Residencia: </span><span id="residencia"></span></li>
+                </ul>
+            </div>       
+        </div>
+    </div>
+
+    <div class="container-experiencia" id="experiencia">
+        <div class="col-7 datos">
+            <i class="fa-regular fa-folder-open fa-2x"></i>
+            <h2>Experiencia</h2>
+            <div id="cuadro-texto-experiencia">
+                <ul id="lista-experiencia">
+                    <li>
+                        <h3>
+                            (2016 - A la fecha) Centro de Aplicaciones Bionucleares:
+                        </h3>
+                        <h4>
+                            Mantenimiento de aceleradores lineales y tomografos computados para uso médico
+                        </h4>
+                        </li>
+                    <li>
+                        <h3>
+                            (2014 - 2016) Bivalvia Sabores del Mar:
+                        </h3>
+                        <h4>
+                            Desarrollo de automatismo para la esterlización de alimentos en autoclave
+                        </h4>
+                    </li>
+                    <li>
+                        <h3>
+                            (2013 - 2015) GE Oil & Gas:
+                        </h3>
+                        <h4>
+                            Programacion de FPGA's para controladores automaticos de equipos de bombeo para la industria petrolera
+                        </h4>
+                    </li>
+                </ul>
+            </div>       
+        </div>
+
+        <div class="col-5 experiencia-icono">
+
+        </div>
+    </div>
+
+    <div class="container-habilidades" id="habilidades">
+        <div class="col-5 habilidades-icono">
+        </div>
+        <div class="col-7 habilidades-datos">
+            <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+            <h2>Habilidades</h2>
+            <div id="cuadro-texto-habilidades">
+                <ul id="lista-habilidades">
+                    <li>
+                        <h3>
+                            Front End:
+                        </h3>
+                        <h4>
+                            Manejo básico de HTML, CSS y Javascript.
+                        </h4>
+                        </li>
+                    <li>
+                        <h3>
+                            Backend:
+                        </h3>
+                        <h4>
+                            Manejo intermedio de Python - Manejo básico de MySQL
+                        </h4>
+                    </li>
+                    <li>
+                        <h3>
+                            Otras tecnologías:
+                        </h3>
+                        <h4>
+                            Manejo básico de sistema de control de versiones GIT
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-contacto" id="contacto">
+        <div class="col-7 formulario">
+            <h2>Contacto</h2>
+            <form method="post" name="formulario" id="formulario" target="_blank">
+                <label>(Campo obligatorio)</label>
+                    <input type="text" name="nombre" id="form-nombre" placeholder="nombre" required>
+                
+                <input type="tel" name="telefono" placeholder="telefono"> 
+                <label>(Campo obligatorio)</label>
+                    <input type="email" name="email" id="form-correo" placeholder="correo electronico" required>
+                
+                <input type="text" name="mensaje" id="mensaje" placeholder="mensaje...">
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="col-5 redes-sociales">
+            <ul id="lista-redes-sociales">
+                <li><a class="vinculos-redes-sociales" id="twitter" href="https://twitter.com/" target="_blank" ><i title="Twitter" class="fa-brands fa-twitter fa-3x"></i></a></li>
+                <li><a class="vinculos-redes-sociales" id="facebook" href="https://es-la.facebook.com/" target="_blank"><i title="Facebook"
+                    class="fa-brands fa-facebook fa-3x"></i></a></li>
+                <li><a class="vinculos-redes-sociales" id="instagram" href="https://www.instagram.com/" target="_blank"><i title="Instagram" class="fa-brands fa-instagram fa-3x"></i></a></li>
+                <li><a class="vinculos-redes-sociales" id="linkedin" href="https://ar.linkedin.com/" target="_blank"><i title="LinkedIn" class="fa-brands fa-linkedin fa-3x"></i></a></li>
+            </ul>
+        </div>    
+    </div>
+
+    <div id="flecha">
+        <div class="clase-flecha">
+            <a href="#body"><i class="fa-solid fa-arrow-up fa-3x"></i></a>
+        </div>
+    </div>
+
+    <script src="./JS/cv.js">
+    </script>
+</body>
+</html>

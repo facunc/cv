@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    scroll-behavior:smooth;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+body{
+    background-color:white;
+    margin:0;
+}
+
+.header{
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color:white;
+}
+
+.header-webpage .header-enlaces{
+    color: black;
+    margin-left:auto;
+    margin-top: 10px;
+    padding-top: 0;
+    text-align: left;
+}
+
+#header-webpage-texto{
+    margin:auto;
+}
+
+.header-enlaces{
+    padding-top: 0;
+}
+
+
+
+.menu-inicio {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: large;
+    min-width: 160px;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-lista {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-lista a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: large;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+  .menu-lista a:hover {background-color: #f1f1f1;}
+  
+  .menu:hover .menu-lista {
+    display: block;
+  }
+  
+  .menu:hover .menu-inicio {
+    background-color: snow;
+  }
+
+
+
+.container-perfil, .container-experiencia, .container-habilidades{
+    height:630px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-contacto{
+    border-top: 1px solid gray;
+    border-bottom: 1px;
+    text-align: center;
+    height: 500px;
+    margin: 30px;
+}
+
+.container-perfil{
+    border-radius: 50px;
+}
+
+.presentacion{
+    color:snow;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    background-color:#667793;
+
+}
+
+#cuadro-presentacion-texto{
+    text-align:left;
+    margin: auto;
+    width: 80%;
+}
+
+.datos{
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.datos-personales{
+    font-weight: 400;
+}
+
+.datos, .experiencia-datos, .habilidades-datos{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+}
+
+.experiencia-icono, .habilidades-icono{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.experiencia-icono{
+    background-image: url("../img/experiencia.png") ;   
+}
+
+.habilidades-icono{
+    background-image: url("../img/habilidades.jpg");
+}
+
+#cuadro-texto-experiencia, #cuadro-texto-habilidades{
+    height: 80%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.presentacion h1{
+    font-size: 2em;
+}
+
+
+
+
+.vinculos-redes-sociales{
+    display: block;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.vinculos-redes-sociales:hover{
+    color:white;
+    transform: scale(1.5);
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
+    background-color: #667793;
+    cursor: pointer;
+}
+
+.redes-sociales{
+    height: 100%;
+    padding: 40px;
+}
+
+#lista-redes-sociales{
+    list-style-type: none;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#twitter:hover{
+    background-color: #1DA1F2;
+}
+#facebook:hover{
+    background-color: #4267B2;
+}
+#instagram:hover{
+    background-color: #C13584;
+}
+#linkedin:hover{
+    background-color: #0077b5;
+}
+
+#cuadro-texto-datos{
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 25px;
+    background-color:#c9ccdd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#lista-datos{
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+
+#lista-experiencia, #lista-habilidades, #lista-datos{
+    color: black;
+    margin-left:0;
+}
+
+
+
+
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    background-color:gainsboro;
+    resize: none;
+}
+
+.formulario form label{
+    float: right;
+    font-size: small;
+}
+
+#mensaje{
+    height: 130px;
+}
+
+#enviar{
+    width: 100px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+#enviar:hover{
+    cursor: pointer;
+}  
+
+
+
+
+.container-flecha-arriba{
+    position: fixed;
+    height: 6vw;
+    width: 6vw;
+    bottom: 6vW;
+    right: 4vw;
+    border-radius: 50%;
+    background-color: lightblue;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.container-flecha-arriba:hover{
+    background-color:aqua;
+    opacity: 0.4;
+    transform: scale(1.2);
+}
+
+.clase-flecha{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.clase-flecha .fa-solid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    color: black;
+}
+
+.clase-flecha a{
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+
+
+ul{
+    display:inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 30px;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2{
+    display: inline;
+    margin-left: 30px;
+}
+
+h2, h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200; 
+}
+
+form{
+    margin-top: 40px;
+}
+
+#experiencia, #habilidades, #contacto{
+    scroll-margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
