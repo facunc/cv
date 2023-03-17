@@ -43,15 +43,3 @@ function irArriba(){
     }
 }
 
-window.onresize = ajuste;
-function ajuste(){
-    if(document.documentElement.clientWidth < 768){
-        document.getElementById('header-izquierda').classList.remove('col-6');
-        document.getElementById('header-derecha').classList.remove('col-6');
-        console.log(document.documentElement.clientWidth)
-    }
-    else{
-        document.getElementById('header-izquierda').classList.add('col-6');
-        document.getElementById('header-derecha').classList.add('col-6');
-    }
-}
