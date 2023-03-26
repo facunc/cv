@@ -43,3 +43,31 @@ function irArriba(){
     }
 }
 
+
+
+
+
+let opciones = {
+    root: null,
+    rootMargin: "100px",
+    threshold: 0.5,
+}
+
+let interseccion = (entradas) => {
+    entradas.forEach((entrada) => {
+         if(entrada.isIntersecting){
+            entrada.target.classList.add('visible');
+         }
+         else{
+            entrada.target.classList.remove('visible');
+         }
+    });
+}
+
+let observador = new IntersectionObserver(interseccion, opciones);
+let contacto = document.querySelector('.container-contacto');
+let perfil = document.querySelector('.container-perfil'); 
+observador.observe(contacto);
+observador.observe(perfil);
+
+
