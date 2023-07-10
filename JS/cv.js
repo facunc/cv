@@ -9,7 +9,7 @@ async function consulta(){
     dato = datosPersonales.results[0];
     var foto = document.getElementById('foto');
 
-    foto.setAttribute('src', dato.picture.large);
+    foto.setAttribute('src', img/foto perfil.bmp);
     document.getElementById('nombre').innerHTML = dato.name.first;
     document.getElementById('nombre-completo').innerHTML = dato.name.first + " " + dato.name.last;
     document.getElementById('origen').innerHTML = dato.nat;
